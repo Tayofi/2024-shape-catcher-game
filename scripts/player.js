@@ -5,7 +5,7 @@ export class Player{
         this.x=x;
         this.y=y;
         
-        this.speed=1
+        this.speed=10
         
         
         
@@ -90,6 +90,22 @@ if (this.moving.right) {
 }
 if (this.moving.left&&this.moving.right) {
     dirX=0;
+    }
+    if (this.moving.right&&this.moving.down){
+        dirY=1/Math.sqrt(2);
+        dirX=1/Math.sqrt(2);
+    }
+    if (this.moving.left&&this.moving.down){
+        dirY=1/Math.sqrt(2);
+        dirX=-1/Math.sqrt(2);
+    }
+    if (this.moving.right&&this.moving.up){
+        dirY=-1/Math.sqrt(2);
+        dirX=1/Math.sqrt(2);
+    }
+    if (this.moving.left&&this.moving.up){
+        dirY=-1/Math.sqrt(2);
+        dirX=-1/Math.sqrt(2);
     }
 this.x += this.speed * dirX;
 this.y += this.speed * dirY;
