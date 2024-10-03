@@ -17,5 +17,3 @@ window.requestAnimationFrame(gameLoopyLoop);
 }
 
 window.requestAnimationFrame(gameLoopyLoop);
-
-Hi
