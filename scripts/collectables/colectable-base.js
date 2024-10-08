@@ -4,10 +4,10 @@ export class CollectableItem {
   constructor(x = 0, y = 0) {
     this.x = x;
     this.y = y;
-this.radius = 20
+    this.radius = 20;
     this.color = "hsl(150 100% 50%)";
 
-this.isCollectable = true;
+    this.isCollectable = true;
     this.isCollected = false;
     this.value = 0;
   }
@@ -19,6 +19,5 @@ this.isCollectable = true;
     ctx.lineWidth = 10;
     ctx.fillStyle = this.color;
     ctx.fill();
-
   }
 }
